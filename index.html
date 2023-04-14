@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Starbucks</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Starbucks 3.0/assets/starbucks-favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <section>
+
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="Starbucks 3.0/assets/logo.png" class="logo"></a>
+
+            <ul class="selecao">
+                <li><a href="https://www.starbucks.com.br/"> Home </a></li>
+                <li><a href="https://www.starbucks.com.br/menu-list"> Menu </a></li>
+                <li><a href="https://www.starbucks.com.br/cafe"> What's New </a></li>
+                <li><a href="https://www.starbucks.com.br/sobre/atendimento"> Contact </a></li>
+            </ul>
+
+        </header>
+
+    <main>
+
+            <div class="text">
+                <h2>it's not just Coffee <br> it's <span>Starbucks</span> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facere qui architecto praesentium fugiat, adipisci velit, exercitationem nam quis illo sequi nemo tempora voluptatem, impedit amet est eos asperiores cumque.</p>
+
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img style="width: 350px; height: 475px;" src="Starbucks 3.0/assets/img1.png" class="drink">
+            </div>
+
+            <ul class="thumb">
+                <li><img src="Starbucks 3.0/assets/img1.png" onclick="imgSlider('Starbucks 3.0/assets/img1.png'); changeCircleColor('#017143')" alt="bebida 1"></li>
+                <li><img src="Starbucks 3.0/assets/img2.png" onclick="imgSlider('Starbucks 3.0/assets/img2.png'); changeCircleColor('#eb7495') " alt="bebida 2"></li>
+                <li><img src="Starbucks 3.0/assets/img3.png" onclick="imgSlider('Starbucks 3.0/assets/img3.png'); changeCircleColor('#d752b1')" alt="bebida 3"></li>
+            </ul>
+
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/StarbucksBrasil/"><img src="Starbucks 3.0/assets/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/starbucksbrasil/"><img src="Starbucks 3.0/assets/instagram.png" alt=""></a></li>
+                <li><a href="https://twitter.com/StarbucksBrasil"><img src="Starbucks 3.0/assets/twitter.png" alt=""></a></li>
+            </ul>
+
+        </main>
+
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlider(anything){
+            document.querySelector('.drink').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+
+</body>
+
+</html>

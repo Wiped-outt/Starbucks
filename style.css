@@ -1,0 +1,198 @@
+@import url('https://fonts.googlepis.com/css?=Poppins:200,300,400,500,600,700,800,900&displayswap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+    width: 100%;
+    display: flex;
+    padding: 100px;
+    min-height: 100vh;
+    position: relative;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header
+{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 10px 100px;
+    justify-content: space-between;
+}
+
+header .logo
+{
+    max-width: 200px;
+    position: relative;
+}
+
+header ul
+{
+    display: flex;
+    position: relative;
+}
+
+header ul li
+{
+    list-style: none;
+}
+
+header ul li a
+{
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none; 
+    display: inline-block;
+}
+
+section main div
+{
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text
+{
+    margin-top: 150px;
+}
+
+.text h2
+{
+    max-width: 600px;
+    position: relative;
+
+    color: #333;
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.text h2 span
+{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #017143;
+}
+
+.text p
+{
+    color: #333;
+    margin-top: 5px;
+    font-weight: 500;
+    border-radius: 40px;
+    letter-spacing: 0,5px;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.text a
+{
+    color: #fff;
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    display: inline-block;
+    background: #017143;
+}
+
+.circle
+{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+.selecao
+{
+    font-weight: 50;
+    font-size: 1.2em;
+}
+
+.selecao :hover
+{
+    color: #017143;
+}
+
+.imgBox
+{
+    width: 800px;
+    padding: 15px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.thumb
+{
+    left: 50%;
+    bottom: 20px;
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.thumb li
+{
+    margin: 0 20px;
+    cursor: pointer;
+    list-style: none;
+    transition: 0.5s;
+    display: inline-block;
+}
+.thumb li:hover
+{
+    transform: translateY(-15px);
+}
+.thumb li img
+{
+    max-width: 60px;
+}
+
+.sci
+{
+    top: 50%;
+    right: 30px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    margin: 5px 0;
+    filter: invert(1);
+    transform: scale(0.6);
+    display: inline-block;
+}
